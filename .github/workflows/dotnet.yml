@@ -22,8 +22,11 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore TemplateMethodDemo/TemplateMethodDemo.csproj
 
-    - name: Build all projects
-      run: dotnet build --no-restore --configuration Release
+    - name: Build main project
+      run: dotnet build TemplateMethodDemo/TemplateMethodDemo.csproj --no-restore --configuration Release
 
-    - name: Test
+    - name: Build test project
+      run: dotnet build TemplateMethodDemo.Tests/TemplateMethodDemo.Tests.csproj --no-restore --configuration Release
+
+    - name: Run tests
       run: dotnet test TemplateMethodDemo.Tests/TemplateMethodDemo.Tests.csproj --no-build --verbosity normal --configuration Release --collect:"XPlat Code Coverage"
