@@ -1,0 +1,14 @@
+G:\TemplateMethodDemo\TemplateMethodDemo\obj\Debug\net6.0\TemplateMethodDemo.GeneratedMSBuildEditorConfig.editorconfig
+G:\TemplateMethodDemo\TemplateMethodDemo\obj\Debug\net6.0\TemplateMethodDemo.AssemblyInfoInputs.cache
+G:\TemplateMethodDemo\TemplateMethodDemo\obj\Debug\net6.0\TemplateMethodDemo.AssemblyInfo.cs
+G:\TemplateMethodDemo\TemplateMethodDemo\obj\Debug\net6.0\TemplateMethodDemo.csproj.CoreCompileInputs.cache
+G:\TemplateMethodDemo\TemplateMethodDemo\bin\Debug\net6.0\TemplateMethodDemo.exe
+G:\TemplateMethodDemo\TemplateMethodDemo\bin\Debug\net6.0\TemplateMethodDemo.deps.json
+G:\TemplateMethodDemo\TemplateMethodDemo\bin\Debug\net6.0\TemplateMethodDemo.runtimeconfig.json
+G:\TemplateMethodDemo\TemplateMethodDemo\bin\Debug\net6.0\TemplateMethodDemo.dll
+G:\TemplateMethodDemo\TemplateMethodDemo\bin\Debug\net6.0\TemplateMethodDemo.pdb
+G:\TemplateMethodDemo\TemplateMethodDemo\obj\Debug\net6.0\TemplateMethodDemo.dll
+G:\TemplateMethodDemo\TemplateMethodDemo\obj\Debug\net6.0\refint\TemplateMethodDemo.dll
+G:\TemplateMethodDemo\TemplateMethodDemo\obj\Debug\net6.0\TemplateMethodDemo.pdb
+G:\TemplateMethodDemo\TemplateMethodDemo\obj\Debug\net6.0\TemplateMethodDemo.genruntimeconfig.cache
+G:\TemplateMethodDemo\TemplateMethodDemo\obj\Debug\net6.0\ref\TemplateMethodDemo.dll
