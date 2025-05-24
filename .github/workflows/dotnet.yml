@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -17,16 +16,16 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '6.0.x'
+        dotnet-version: '6.0.x' 
+
+    - name: Clear NuGet cache
+      run: dotnet nuget locals all --clear
 
     - name: Restore dependencies
-      run: dotnet restore TemplateMethodDemo/TemplateMethodDemo.csproj
+      run: dotnet restore TemplateMethodDemo.Tests/TemplateMethodDemo.Tests.csproj
 
-    - name: Build main project
-      run: dotnet build TemplateMethodDemo/TemplateMethodDemo.csproj --no-restore --configuration Release
-
-    - name: Build test project
+    - name: Build
       run: dotnet build TemplateMethodDemo.Tests/TemplateMethodDemo.Tests.csproj --no-restore --configuration Release
 
-    - name: Run tests
+    - name: Test
       run: dotnet test TemplateMethodDemo.Tests/TemplateMethodDemo.Tests.csproj --no-build --verbosity normal --configuration Release --collect:"XPlat Code Coverage"
