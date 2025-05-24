@@ -17,13 +17,13 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '6.0.x' 
+        dotnet-version: '6.0.x'
 
     - name: Restore dependencies
       run: dotnet restore TemplateMethodDemo/TemplateMethodDemo.csproj
 
-    - name: Build
-      run: dotnet build TemplateMethodDemo/TemplateMethodDemo.csproj --no-restore --configuration Release
+    - name: Build all projects
+      run: dotnet build --no-restore --configuration Release
 
     - name: Test
       run: dotnet test TemplateMethodDemo.Tests/TemplateMethodDemo.Tests.csproj --no-build --verbosity normal --configuration Release --collect:"XPlat Code Coverage"
