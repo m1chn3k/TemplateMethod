@@ -20,6 +20,7 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS test
 
 WORKDIR /src/TemplateMethodDemo.Tests
 
-COPY --from=build /src/TemplateMethodDemo.Tests ./TemplateMethodDemo.Tests
+
+COPY --from=build /src/TemplateMethodDemo.Tests .
 
 CMD ["dotnet", "test", "--no-build", "--logger:trx"]
