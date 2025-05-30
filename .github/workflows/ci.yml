@@ -3,10 +3,10 @@ name: CI with Docker
 on:
   push:
     branches:
-      - docker-setup
+      - dockerlab2
   pull_request:
     branches:
-      - docker-setup
+      - dockerlab2
 
 jobs:
   build:
